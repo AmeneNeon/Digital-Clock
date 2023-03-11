@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: yellowgreen;
+  font-family: sans-serif;
+  background-size: cover;
+  overflow: hidden;
+}
+h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+.clock {
+  display: flex;
+}
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+.clock span {
+  width: 100px;
+  height: 80px;
+  background: slateblue;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0, 0.3);
+}
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: 0.8;
+}
+/* use (position:absolute) to change the position of ampm, so we have to set  the position of( clock div) to( relative) */
+#ampm {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: red;
+}
